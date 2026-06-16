@@ -10,6 +10,40 @@
     <title>Music App</title>
 </head>
 <body>
+
+        <form action="" class="song-entry">
+            <label for="song-title">Song Title</label>
+            <input type="text" name="song-title" id="song-title" required>
+
+            <label for="artist">Artist</label>
+            <input type="text" name="artist" id="artist" required>
+
+            <label for="songminutes">Minutes</label>
+            <input type="number" min="0" max="60" name="songminutes" id="songminutes" required>
+
+            <label for="songseconds">Seconds</label>
+            <input type="number" min="0" max="59" name="songseconds" id="songseconds" required>
+
+            <input type="submit" value="Add">
+        </form>
+        <div class="now-playing-container">
+            <p>Now playing</p>
+            <p>Espresso</p>
+            <p>Sabrina Carpenter</p>
+            <p>2</p>
+            <p>58</p>
+        </div>
+        <div class="queue-container">
+            <div class="song-container">
+                <p>1</p>
+                <p>Song name</p>
+                <p>Artist name</p>
+                <p>2</p>
+                <p>58</p>
+                <input type="button" value="Move to top">
+                <input type="button" value="Remove">
+            </div>
+        </div>
     
     <script src="/js/app.js"></script>
 </body>
