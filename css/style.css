@@ -1,0 +1,41 @@
+
+/* Root Variables */
+:root {
+
+}
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* General Styling */
+.app-container {
+    max-width: 38rem;
+}
+
+form {
+    background-color: hotpink;
+}
+
+.now-playing-container {
+    background-color: aqua;
+
+    & p:nth-child(1) {
+        color: red;
+    }
+}
+
+.queue-container {
+    background-color: yellow;
+}
