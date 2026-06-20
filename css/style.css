@@ -21,13 +21,20 @@ body {
 
 /* General Styling */
 .app-container {
-    max-width: 38rem;
+    max-width: 42rem;
 }
 
 form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+
     background-color: #2c3539;
-    height: 3rem;
+    height: 4rem;
     border-radius: 0.4rem;
+    padding: 0px 15px 0px 15px;
 
     & label:nth-of-type(1) {
         color: #FFF;
@@ -40,6 +47,32 @@ form {
     }
     & label:nth-of-type(4) {
         color: #FFF;
+    }
+    & input:nth-of-type(1) {
+        margin: 0px 2px 0px 2px;
+        border-radius: 0.4rem;
+        text-align: center;
+    }
+    & input:nth-of-type(2) {
+        margin: 0px 2px 0px 2px;
+        border-radius: 0.4rem;
+        text-align: center;
+    }
+    & input:nth-of-type(3) {
+        margin: 0px 2px 0px 2px;
+        border-radius: 0.4rem;
+        text-align: center;
+    }
+    & input:nth-of-type(4) {
+        margin: 0px 2px 0px 2px;
+        border-radius: 0.4rem;
+        text-align: center;
+    }
+    & input:nth-of-type(5) {
+        margin: 0px 0px 0px 5px;
+        color: #FFF;
+        background-color: #7B68EE;
+        border-radius: 0.4rem;
     }
 }
 
