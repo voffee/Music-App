@@ -12,19 +12,25 @@
 <body>
     <div class="app-container">
         <form action="" class="song-entry">
-            <label for="song-title" class="montserrat-small">Song Title</label>
-            <input type="text" name="song-title" id="song-title" placeholder="Song Title" required>
-
-            <label for="artist" class="montserrat-small">Artist</label>
-            <input type="text" name="artist" id="artist" placeholder="Artist" required>
-
-            <label for="songminutes" class="montserrat-small">Minutes</label>
-            <input type="number" min="0" max="60" name="songminutes" id="songminutes" placeholder="0" required>
-
-            <label for="songseconds" class="montserrat-small">Seconds</label>
-            <input type="number" min="0" max="59" name="songseconds" id="songseconds" placeholder="00" required>
-
-            <input type="submit" value="Add" class="montserrat-small">
+            <div class="input-label-combined-container">
+                <input type="text" name="song-title" id="song-title" placeholder=" " required>
+                <label for="song-title" class="montserrat-small">Song Title</label>
+            </div>
+            <div class="input-label-combined-container">
+                <input type="text" name="artist" id="artist" placeholder=" " required>
+                <label for="artist" class="montserrat-small">Artist</label>
+            </div>
+            <div class="input-label-combined-container">
+                <input type="number" min="0" max="60" name="songminutes" id="songminutes" placeholder=" " required>  
+                <label for="songminutes" class="montserrat-small">0</label>
+            </div>
+            <div class="input-label-combined-container">
+                <input type="number" min="0" max="59" name="songseconds" id="songseconds" placeholder=" " required>
+                <label for="songseconds" class="montserrat-small">00</label>
+            </div>
+            <div class="input-button-container">
+                <input type="submit" value="Add" class="montserrat-small">
+            </div>
         </form>
         <div class="now-playing-container">
             <p class="opensans-small">Now playing</p>
