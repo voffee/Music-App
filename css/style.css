@@ -22,6 +22,10 @@ body {
 /* General Styling */
 .app-container {
     max-width: 42rem;
+    background-color: #F8F9FB;
+    border: 1px solid #000;
+    border-radius: 0.4rem;
+    padding: 1.8rem;
 }
 
 form {
