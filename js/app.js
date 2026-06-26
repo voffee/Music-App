@@ -29,6 +29,7 @@ function queueHandler(e) {
 
     bundler(songBundle);
     queueConstructor(canonicalQueue);
+    nowPlayingConstructor(canonicalQueue[1]);
 
     idCount = idCount + 1;
 }
@@ -47,15 +48,21 @@ function queueConstructor(passedData) {
         let songIndex = index + 1;
         newSong.classList.add('song-container');
         newSong.innerHTML = `
-        <p class="montserrat-small">${songIndex}</p>
-        <p class="montserrat-medium">${element.title}</p>
-        <p class="montserrat-small">${element.artist}</p>
-        <p class="montserrat-small">${element.minutes}: </p>
-        <p class="montserrat-small">${element.seconds}</p>
-        <input type="button" value="Move to top" class="montserrat-small">
-        <input type="button" value="Remove" class="montserrat-small">
+         <p class="montserrat-small">${songIndex}</p>
+                <p class="montserrat-medium">${element.title}</p>
+                <p class="montserrat-small">${element.artist}</p>
+                <div>
+                    <p class="montserrat-small">${element.minutes}: </p>
+                    <p class="montserrat-small">${element.seconds}</p>
+                </div>
+                <input type="button" value="Move to top" class="montserrat-small">
+                <input type="button" value="Remove" class="montserrat-small">
         `;
         queueContainer.appendChild(newSong);
     });
     console.log(duplicatedCanonicalQueue[idCount]);
+}
+
+function nowPlayingConstructor(passedData) {
+    console.log(passedData);
 }
