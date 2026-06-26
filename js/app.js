@@ -42,11 +42,12 @@ function bundler(passedSong) {
 function queueConstructor(passedData) {
     const duplicatedCanonicalQueue = [...passedData];
     queueContainer.innerHTML = ``;
-    duplicatedCanonicalQueue.forEach(element => {
+    duplicatedCanonicalQueue.forEach((element, index) => {
         const newSong = document.createElement('div');
+        let songIndex = index + 1;
         newSong.classList.add('song-container');
         newSong.innerHTML = `
-        <p class="montserrat-small">${element.songID}</p>
+        <p class="montserrat-small">${songIndex}</p>
         <p class="montserrat-medium">${element.title}</p>
         <p class="montserrat-small">${element.artist}</p>
         <p class="montserrat-small">${element.minutes}: </p>
