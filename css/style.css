@@ -147,6 +147,7 @@ form {
         grid-template-rows: 1fr;
         gap: 0.1rem;
         border-radius: 0.4rem;
+        margin-bottom: 0.2rem;
 
         & p:nth-of-type(1) {
             color: #FFF;
